@@ -3,8 +3,8 @@
 API de receitas
 
 ## Requisitos
-Para criar e executar o aplicativo, você precisa:
 
+Para executar o aplicativo, você precisa:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3](https://maven.apache.org)
