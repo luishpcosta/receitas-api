@@ -11,6 +11,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 
 @Entity
@@ -23,13 +25,15 @@ public class Receita  implements Serializable {
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long id;
-	
+	@NotNull
 	private String nome;
 	
 	private Integer porcoes;
 	
 	private Integer calorias;
 	
+	@NotNull
+	@NotEmpty
 	@ManyToMany
     @JoinTable(
         name = "receita_ingrediente",

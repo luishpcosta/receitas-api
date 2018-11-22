@@ -18,6 +18,7 @@ public class DataLoader {
 	@Bean
 	public CommandLineRunner loadData(ReceitaRepository receitaRepository, IngredienteRepository ingredienteRepository) {
 		return  (args) -> { 
+			
 			Ingrediente ovo = new Ingrediente("Ovo");
 			Ingrediente Acucar = new Ingrediente("Açúcar");
 			Ingrediente manteiga = new Ingrediente("Manteiga");
@@ -33,6 +34,10 @@ public class DataLoader {
 			
 			Receita receita = new Receita("Cuca de Banana", 10, 4600, ingredientes, "Faça a massa e cubra com as bananas em fatias finas");
 			receitaRepository.save(receita);
+			
+			ingredienteRepository.save(new Ingrediente("Chocolate"));
+			ingredienteRepository.save(new Ingrediente("Sal"));
+			
 			
 		};
 	}

@@ -18,5 +18,9 @@ public class IngredienteService {
 	public List<Ingrediente> listaOrdenadaAlfabeticamente() {
 		return ingredienteRepository.findAll(new Sort(Sort.Direction.ASC, "nome"));
 	}
+	
+	public List<Ingrediente> listaIngredientesEmReceita(){
+		return ingredienteRepository.listaIngredientesEmReceita();
+	}
 
 }
