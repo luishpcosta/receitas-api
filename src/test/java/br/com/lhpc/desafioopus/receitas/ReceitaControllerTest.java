@@ -34,7 +34,6 @@ public class ReceitaControllerTest {
 	@Autowired
 	private IngredienteRepository ingredienteRepository;
 	
-	
 	ObjectMapper mapper = new ObjectMapper();
 
 	@Test
