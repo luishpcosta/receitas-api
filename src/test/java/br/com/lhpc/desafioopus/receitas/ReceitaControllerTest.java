@@ -43,7 +43,7 @@ public class ReceitaControllerTest {
 		Ingrediente ingrediente = new Ingrediente("Ovo");
 		ingrediente = ingredienteRepository.save(ingrediente);
 
-		Receita receita = new Receita("Ovo frito", 1, 10, Arrays.asList(ingrediente), "frite o ovo na frigideira");
+		Receita receita = new Receita("Ovo frito", 1, 10, Arrays.asList(ingrediente), "Frite o ovo na frigideira");
 		
 		ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
 		String json = ow.writeValueAsString(receita);
