@@ -9,7 +9,7 @@ Para executar o aplicativo, você precisa:
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Maven 3](https://maven.apache.org)
 
-### Clone o repositório
+## Clone o repositório
 
 `$ git clone git://github.com/luishpcosta/receitas-api.git`
 
