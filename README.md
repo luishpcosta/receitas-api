@@ -18,7 +18,7 @@ Para executar o aplicativo, você precisa:
 Existem várias maneiras de executar um aplicativo Spring Boot em sua máquina local. Uma maneira é executar o main 
 método na `br.com.lhpc.desafioopus.receitas` na sua IDE.
 
-Também pode usar o plugin Spring Boot Maven da seguinte forma:
+Também pode usar o plugin Spring Boot Maven da seguinte forma na linha de comando dentro da pasta do projeto:
 
 `mvn spring-boot:run`
 
